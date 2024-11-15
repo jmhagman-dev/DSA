@@ -1,0 +1,31 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "description": "Exploring DSA in javascript.",
+  "main": "index.js",
+  "type": "module",
+
+  "scripts": {
+    "start": "nodemon –-experimental-modules",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --watch"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0",
+    "jest-extended": "^4.0.2",
+    "nodemon": "^3.1.7"
+  },
+  "jest": {
+    "transform": {
+    },
+    "extensionsToTreatAsEsm": [".ts", ".tsx"],
+    "moduleNameMapper": {
+      "^(\\.{1,2}/.*)\\.js$": "$1"
+    },
+    "setupFilesAfterEnv": ["jest-extended/all"],
+    "testEnvironment": "node"
+  }
+}
